@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-# Project Name - Recipe-Box
+# Project Name - Recipe-Box - URL - https://haeke.github.com/Recipe-Box
 
 Description - The idea for this project came from FreeCodeCamp. There is a challenge to build an application that lists recipes and ingredients. In this web app, the recipe box let's a user add a recipe name and a brief description. I chose to add the data to a database instead of using local storage so that the list of entered information will be shown to anyone who uses the web app. The data that is entered is stored into firebase so the data is persistent.
 
