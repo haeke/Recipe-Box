@@ -15,26 +15,29 @@ class EditRecipe extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
+    //handle changing the state of the open property to show the Modal
     show = size => () => this.setState({ size, open: true });
 
+    //handle changing the state of the open propert to close the Modal
     close = () => this.setState({ open: false });
 
+    //handle changing the text in the input when a user types
     handleChange = (e, { name, value }) => this.setState({[name]: value});
+    
 
     handleSubmit = () => {
         const { name, description } = this.state;
-        console.log(name + description);
+        //handle the case where either name or description are blank
         if (name === '' || description === '') {
             this.setState({
-                error: !this.state.error,
+                error: true,
             });
-            console.log(this.state.error);
         } else {
             //create an object containing the name and description
             const newItem = Object.assign({name, description});
-            console.log(newItem);
+            //pass the object and active index so the item can be replaced
             this.props.editItem(newItem, this.props.activeIndex);
+            //close the modal after a user clicks on the submit button
             this.close();
         }
     }

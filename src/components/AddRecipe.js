@@ -4,7 +4,6 @@ import { Modal, Button, Form, Message } from 'semantic-ui-react';
 class AddRecipe extends Component {
     constructor(props) {
         super(props);
-        //set the initial state for the addRecipe modal
         this.state = {
             open: false,
             name: '',
@@ -28,17 +27,17 @@ class AddRecipe extends Component {
     //send the text entered into the 
     handleSubmit = () => {
         const { name, description } = this.state;
-        //if either are null do not update the state with the new item
+        //show the an error message if either name or description are left blank
         if (name === '' || description === '') {
             this.setState({
-                error: !this.state.error,
+                error: true,
             });
-            console.log(this.state.error);
         } else {
             //create a new object containing the name and description
             const newItem = Object.assign({name, description});
-            console.log(newItem);
+            //pass the new item to update the state of the recipes array
             this.props.addRecipe(newItem);
+            //close the modal
             this.close();
         }
     }
