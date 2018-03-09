@@ -6,6 +6,7 @@ Description - The idea for this project came from FreeCodeCamp. There is a chall
 
 # Motivation
   - The motivation for this application is to get comfortable with creating React components to render data.
+  - Working with forms in React - input validation, updating state when a user fills in a form submits the form.
   - Learn more about storing information using firebase.
   - Work with forms in React to create and edit state.
   - Continue to work with Semantic-ui-react for responsive web design across multiple devices.
