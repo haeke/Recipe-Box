@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/Recipe-Box/static/js/runtime~main.754a38e0.js"
   },
   {
-    "revision": "f782e38bd6d3bdd82a21",
-    "url": "/Recipe-Box/static/js/main.f782e38b.chunk.js"
+    "revision": "94348227f5ec4d2cf84d",
+    "url": "/Recipe-Box/static/js/main.94348227.chunk.js"
   },
   {
     "revision": "c82a228a70a538976697",
     "url": "/Recipe-Box/static/js/1.c82a228a.chunk.js"
   },
   {
-    "revision": "f782e38bd6d3bdd82a21",
-    "url": "/Recipe-Box/static/css/main.95b1bab0.chunk.css"
+    "revision": "94348227f5ec4d2cf84d",
+    "url": "/Recipe-Box/static/css/main.710f5365.chunk.css"
   },
   {
-    "revision": "4fcc6473004cee18fcfda8cdcbc54165",
+    "revision": "bfbdd53d4164611c46e286b84deff7f0",
     "url": "/Recipe-Box/index.html"
   }
 ];
