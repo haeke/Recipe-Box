@@ -57,27 +57,25 @@ class RecipeBox extends Component {
 
   render() {
     return (
-      <div>
-        <Grid centered computer={16}>
-          <HeaderTitle />
-          <Grid.Row style={{ paddingTop: 0, height: "100vh" }}>
-            <Grid.Column computer={8} tablet={16} mobile={16}>
-              <Accordion fluid styled style={{ margin: "15px" }}>
-                <AddRecipe addRecipe={this.addRecipe} />
-                {this.state.recipes.length > 0 ? (
-                  <ShowRecipes
-                    recipes={this.state.recipes}
-                    removeItem={this.removeItem}
-                    editItem={this.editItem}
-                    addRecipe={this.addRecipe}
-                  />
-                ) : null}
-              </Accordion>
-            </Grid.Column>
-          </Grid.Row>
-          <Footer />
-        </Grid>
-      </div>
+      <Grid centered computer={16}>
+        <HeaderTitle />
+        <Grid.Row style={{ paddingTop: 0, minHeight: "100vh" }}>
+          <Grid.Column computer={8} tablet={16} mobile={16}>
+            <Accordion fluid styled style={{ marginTop: "15px" }}>
+              <AddRecipe addRecipe={this.addRecipe} />
+              {this.state.recipes.length > 0 ? (
+                <ShowRecipes
+                  recipes={this.state.recipes}
+                  removeItem={this.removeItem}
+                  editItem={this.editItem}
+                  addRecipe={this.addRecipe}
+                />
+              ) : null}
+            </Accordion>
+          </Grid.Column>
+        </Grid.Row>
+        <Footer />
+      </Grid>
     );
   }
 }
