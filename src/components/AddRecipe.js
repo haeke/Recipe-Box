@@ -32,8 +32,8 @@ class AddRecipe extends Component {
       const newItem = Object.assign({ name, description });
       //pass the new item to update the state of the recipes array
       this.props.addRecipe(newItem);
-      //close the modal
-      this.close();
+
+      this.setState(() => ({ name: "", description: "" }), () => this.close());
     }
   };
 
